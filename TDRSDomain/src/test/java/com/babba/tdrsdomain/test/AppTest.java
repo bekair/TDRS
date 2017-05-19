@@ -1,4 +1,4 @@
-package com.babba.tdrsdomain;
+package com.babba.tdrsdomain.test;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

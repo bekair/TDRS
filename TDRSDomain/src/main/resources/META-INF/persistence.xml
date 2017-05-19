@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="com.babba_TDRSDomain_jar_1.0PU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>com.babba.tdrsdomain.entities.Court</class>
+    <class>com.babba.tdrsdomain.entities.Reservation</class>
+    <class>com.babba.tdrsdomain.entities.TimeSlice</class>
+    <class>com.babba.tdrsdomain.entities.Trainee</class>
+    <class>com.babba.tdrsdomain.entities.Trainer</class>
+    <class>com.babba.tdrsdomain.entities.Training</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://west-2-mysql-tdrs.c8xjvqiddkqu.us-west-2.rds.amazonaws.com:3306/tdrsdb?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="tdrsuser"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="tdrstdrs06"/>
+      <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
